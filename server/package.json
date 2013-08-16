@@ -1,0 +1,10 @@
+{
+    "name": "betela_site",
+    "description": "betela website",
+    "author": "randriav",
+    "dependencies": {
+        "express": ">= 3.3.4",
+        "mongoskin": ">= 0.6.0"
+    },
+    "engine": "node 0.10.13"
+}

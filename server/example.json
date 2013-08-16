@@ -1,0 +1,1 @@
+db.posts.insert({"body" : "Hello\n", "permalink" : "TqoHkbHyUgLyCKWgPLqm","author" : "machine","title" : "US Constitution","tags" : ["trade"],"comments" : [{"body" : "est laborum","email" : "LkvwxBUa@LOPSfuBf.com","author" : "Admin"}]});
