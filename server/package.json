@@ -4,7 +4,11 @@
     "author": "randriav",
     "dependencies": {
         "express": ">= 3.3.4",
-        "mongoskin": ">= 0.6.0"
+        "mongoskin": ">= 0.6.0",
+        "node-logentries": ">= 0.1.1"
+    },
+    "scripts": {
+        "start": "node bin/betela.js"
     },
     "engine": "node 0.10.13"
 }
