@@ -35,9 +35,11 @@ function createPost (req, res) {
     var query = {"body": content, "permalink": permalink, "author": "admin","title": "Tonga Soa","tags": tags,
         "comments": [{"body": comments_body,"email": comments_email,"author": comments_author}]
     };
-    models.posts.insert({}, function(err, result)) {
 
-    }
+
+    //models.posts.insert({}, function(err, result)) {
+
+    //}
     return res.send(201);
 
 };
