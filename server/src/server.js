@@ -12,7 +12,7 @@ exports.createServer = function createServer () {
         res.header('Access-Control-Allow-Origin', "*");
     };
 
-    server.use(allowCrossDomain);
+    //server.use(allowCrossDomain);
 
     // attach router handlers
     routes.attachHandlers(server);
