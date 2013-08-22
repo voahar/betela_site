@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>API index</title>
+  </head>
+  <body>
+    <section>
+      <h1>Nouns...</h1>
+      <p>
+        /products<br>
+        /products/:id
+      </p>
+    </section>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  </body>
+  <script type="text/javascript">
+//      $.ajax({
+//          type: "GET",
+//          dataType: "jsonp",
+//          url: "http://localhost:1313/post",
+//          success: function(data){
+//              alert(data);
+//          }
+//      });
+
+      $.getJSON('http://localhost:1313/post', function(data) {
+          var items = [];
+
+          $.each(data, function(key, val) {
+              items.push('<li id="' + key + '">' + val + '</li>');
+          });
+
+          $('<ul/>', {
+              'class': 'my-new-list',
+              html: items.join('')
+          }).appendTo('body');
+      });
+  </script>
+</html>
