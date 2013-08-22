@@ -37,7 +37,7 @@ function createPost (req, res) {
     };
 
 
-    //models.posts.insert({}, function(err, result)) {
+    //models.posts.insert({}, function(err, result))d  d {
 
     //}
     return res.send(201);
